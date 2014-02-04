@@ -6,13 +6,16 @@ Add section handlebars precompiling to your gulp-web-modules project.
 Usage
 -----
 Your handlebars template should be located in a file called *templates* within your section directory
+```
     {project root}
     |-- lib
         |-- myfile.js
+```
 
 Install
 ------
 Add this plugin to the gulp-web-module reference in your gulpfile
+```javascript
     var gulpWebModules = require('gulp-web-modules'),
         gwmLib = require('gwm-lib');
 
@@ -21,6 +24,7 @@ Add this plugin to the gulp-web-module reference in your gulpfile
         gwmLib(options)
       ]
     }).injectTasks(gulp);
+```
 
 Options
 -------
