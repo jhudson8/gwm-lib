@@ -2,8 +2,8 @@ var fileHeader = require('./lib/file-header'),
     fs = require('fs');
 
 module.exports = function(options) {
-  options = options || {},
-      dir = options.dir || 'lib',
+  options = options || {};
+  var dir = options.dir || 'lib',
       priority = options.priority;
 
   return {
