@@ -8,14 +8,20 @@ module.exports = function(options) {
 
   return {
     javascript: {
-      completeBase: function(options, pipeline) {
-        var fileNames = fs.readdirSync('./' + dir);
-        if (priority) {
-          fileNames = orderFiles(fileNames, priority);
+      complete: function(options, pipeline) {
+        var dirPath = options.srcPath + dir;
+        if (fs.existsSync(dirPath)) {
+          var fileNames = fs.readdirSync(dirPath);
+          if (priority) {
+            fileNames = orderFiles(fileNames, priority);
+          }
+          return pipeline.pipe(fileHeader(fileNames.map(function(name) {
+            console.log('PIPING: ' + dirPath + '/' + name);
+            return dirPath + '/' + name;
+          })));
+        } else {
+          return pipeline;
         }
-        return pipeline.pipe(fileHeader(fileNames.map(function(name) {
-          return './' + dir + '/' + name;
-        })));
       }
     }
   }

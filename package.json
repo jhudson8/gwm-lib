@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "event-stream": "~3.1",
-    "gwm-util": "~0.1"
+    "gwm-util": "~0.0"
   }
 }
