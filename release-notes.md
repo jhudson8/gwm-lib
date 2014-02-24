@@ -2,7 +2,13 @@
 
 ## Development
 
-[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.0.2...master)
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.0...master)
+
+## v0.1.0 - February 23rd, 2014
+
+- use [section]/lib instead of [root]/lib for global files in any section - 3569796
+
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.0.2...v0.1.0)
 
 ## v0.0.2 - February 4th, 2014
 
