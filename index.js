@@ -16,7 +16,6 @@ module.exports = function(options) {
             fileNames = orderFiles(fileNames, priority);
           }
           return pipeline.pipe(fileHeader(fileNames.map(function(name) {
-            console.log('PIPING: ' + dirPath + '/' + name);
             return dirPath + '/' + name;
           })));
         } else {
