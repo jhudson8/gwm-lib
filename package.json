@@ -1,6 +1,6 @@
 {
   "name": "gwm-lib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Joe Hudson <joehud@gmail.com>",
   "description": "Copy all file content in a specific directory to gulp-web-modules base javascript file",
   "repository": {
