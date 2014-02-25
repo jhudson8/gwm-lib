@@ -2,7 +2,15 @@
 
 ## Development
 
-[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.0...master)
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.1...master)
+
+## v0.1.1 - February 25th, 2014
+
+- fix never ending scenario - 9e351a7
+- bypass hidden files - 7521585
+- remove console.log - 5a792a8
+
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.0...v0.1.1)
 
 ## v0.1.0 - February 23rd, 2014
 
