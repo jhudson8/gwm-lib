@@ -8,48 +8,14 @@ module.exports = function(options) {
 
   return {
     javascript: {
-      complete: function(options, pipeline) {
-        var dirPath = options.srcPath + dir;
-        if (fs.existsSync(dirPath)) {
-          var fileNames = fs.readdirSync(dirPath);
-          if (priority) {
-            fileNames = orderFiles(fileNames, priority);
-          }
-          return pipeline.pipe(fileHeader(fileNames.map(function(name) {
-            return dirPath + '/' + name;
-          })));
-        } else {
-          return pipeline;
-        }
+      complete: function(_options, pipeline) {
+        var dirPath = _options.srcPath + dir;
+        return pipeline.pipe(fileHeader(dirPath, options, _options.gulp));
+      },
+      watch: function(options) {
+        return './' + options.srcPath + dir + '/**/*'
       }
     }
   }
 };
 
-function orderFiles(fileNames, priorityOrdering) {
-  var used = {},
-      rtn = [];
-
-  // add the high priority
-  for (var i in priorityOrdering) {
-    var fileName = priorityOrdering[i],
-        regexp = new RegExp('^' + fileName.replace('*', '.*') + '$');
-    for (var j in fileNames) {
-      if (fileNames[j].match(regexp)) {
-        used[j] = true;
-        rtn.push(fileNames[j]);
-        break;
-      }
-    }
-  }
-
-  // add all the leftovers
-  for (var i in fileNames) {
-    var fileName = fileNames[i];
-    if (!used[i] && fileName.indexOf('.') !== 0) {
-      rtn.push(fileName);
-    }
-  }
-
-  return rtn;
-}
