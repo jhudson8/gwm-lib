@@ -2,7 +2,13 @@
 
 ## Development
 
-[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.1...master)
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.2...master)
+
+## v0.1.2 - February 27th, 2014
+
+- use a glob pipeline to retrieve lib entries rather than a blocking load - 30b6b37
+
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.1...v0.1.2)
 
 ## v0.1.1 - February 25th, 2014
 
