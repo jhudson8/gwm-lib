@@ -2,7 +2,12 @@
 
 ## Development
 
-[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.2...master)
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.3...master)
+
+## v0.1.3 - June 7th, 2014
+- update plugin to work with new gulp-web-modules base module location (./js/lib) - 02b3c86
+
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.2...v0.1.3)
 
 ## v0.1.2 - February 27th, 2014
 
