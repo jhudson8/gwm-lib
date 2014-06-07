@@ -3,7 +3,7 @@ var fileHeader = require('./lib/file-header'),
 
 module.exports = function(options) {
   options = options || {};
-  var dir = options.dir || 'lib',
+  var dir = options.dir || 'js/lib',
       priority = options.priority;
 
   return {
@@ -13,7 +13,7 @@ module.exports = function(options) {
         return pipeline.pipe(fileHeader(dirPath, options, _options.gulp));
       },
       watch: function(options) {
-        return './' + options.srcPath + dir + '/**/*'
+        return options.srcPath + dir + '/**/*'
       }
     }
   }
