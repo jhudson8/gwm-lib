@@ -2,7 +2,12 @@
 
 ## Development
 
-[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.3...master)
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.2.0...master)
+
+## v0.2.0 - June 16th, 2014
+- add bower support - 47db8b3
+
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.1.3...v0.2.0)
 
 ## v0.1.3 - June 7th, 2014
 - update plugin to work with new gulp-web-modules base module location (./js/lib) - 02b3c86
