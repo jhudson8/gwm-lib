@@ -2,7 +2,12 @@
 
 ## Development
 
-[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.2.0...master)
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.3.0...master)
+
+## v0.3.0 - June 23rd, 2014
+- add includeIf support - d56fec6
+
+[Commits](https://github.com/jhudson8/gwm-lib/compare/v0.2.0...v0.3.0)
 
 ## v0.2.0 - June 16th, 2014
 - add bower support - 47db8b3
