@@ -50,6 +50,10 @@ Not all files in the lib dirs will be included, only those that are referenced i
     })
 ```
 
+For each include, you can provide a string representing the file name or a hash of options with specific values for specific build types and these values
+
+* ***includeIf***: conditional javascript statement that will wrap the code, ex ```foo === bar``` will translate to ```if (foo === bar) { ...code... }
+
 Bower
 -----
 This plugin understands bower.  All you have to do is to prefix the lib entries with "bower:"" to use bower for the resources.  This is an example of using jquery.

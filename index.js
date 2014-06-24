@@ -30,15 +30,15 @@ module.exports = function(options) {
 
     paths = paths.map(function(path) {
       if (typeof path === 'string') {
-        return path;
+        return {resource: path, options: {}};
       } else {
-        return path[buildType] || path.dev;
+        return {resource: path[buildType] || path.dev, options: path};
       }
     });
 
     for (var i=0; i<paths.length; i++) {
       item = paths[i];
-      match = item.match(/bower:(.*)/);
+      match = item.resource.match(/bower:(.*)/);
       if (match) {
         bowerComponents.push(match[1]);
       }
